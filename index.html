@@ -1,0 +1,249 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curiosidades - Pie Pequeño</title>
+
+  <style>
+    /* Reset general */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9fafb;
+      color: #333;
+      line-height: 1.6;
+      background-image: url(https://cdn.pixabay.com/photo/2021/06/08/02/03/tropical-6319434_1280.jpg);
+      background-repeat: repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    /* ====== RECUADRO DE CADA SECCIÓN ====== */
+    .recuadro {
+      background-color: #ffffff;
+      padding: 40px;
+      margin: 50px auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      max-width: 1000px;
+    }
+
+    /* ====== ENCABEZADO ====== */
+    header {
+      height: 100vh;
+      background: url("img/the-land-before-time-social.avif") center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    header h1 {
+      position: relative;
+      font-size: 3em;
+      z-index: 1;
+      text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+
+    /* ====== NAVEGACIÓN ====== */
+    nav {
+      background-color: darkgreen;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    /* ====== SECCIONES ====== */
+    .section h2 {
+      text-align: center;
+      color: #2b4b7c;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      text-align: justify;
+      font-size: 1rem;
+      color: #444;
+    }
+
+    /* ====== GALERÍA ====== */
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    .item {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .item:hover {
+      transform: scale(1.05);
+    }
+
+    .item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .item p {
+      padding: 10px;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    /* ====== FOOTER ====== */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2b4b7c;
+      color: white;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2em;
+      }
+      nav a {
+        margin: 10px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ====== ENCABEZADO ====== -->
+  <header>
+    <h1>LA TIERRA ANTES DEL TIEMPO</h1>
+  </header>
+
+  <!-- ====== MENÚ ====== -->
+  <nav>
+    <a href="#produccion">Producción</a>
+    <a href="#actores">Personajes principales</a>
+    <a href="#mercancia">Mercancía</a>
+    <a href="#animacion">Animación</a>
+    <a href="#galeria">Galería</a>
+  </nav>
+
+  <!-- ====== SECCIONES INDEPENDIENTES ====== -->
+  <section id="produccion" class="section recuadro">
+    <h2>Producción</h2>
+    <p>
+      La película <em>Pie Pequeño</em> es una animación producida por Don Bluth, Steven Spielberg y George Lucas.
+      Fue lanzada en 1988 y se convirtió en una historia entrañable sobre amistad, valor y esperanza en tiempos difíciles.
+    </p>
+  </section>
+
+  <section id="actores" class="section recuadro">
+    <h2>Personajes principales</h2>
+    <p>En un mundo prehistórico lleno de desafíos, Pie Pequeño, Cera, Ducky, Petrie y Spike emprenden una travesía inolvidable en busca del Gran Valle. La amistad y cooperación son la clave para superar los peligros del viaje.</p>
+
+    <div class="galeria">
+      <div class="item">
+        <img src="img/littlefoot_the_apatosaurus_vector_2_by_digiponythedigimon-d66aqbz.png" alt="Pie Pequeño">
+        <p>Pie Pequeño — Gabriel Damon</p>
+      </div>
+      <div class="item">
+        <img src="img/Cera-la-dinosauria-triceratops-pie-peque%C3%B1o-PNG-5.png" alt="Cera">
+        <p>Cera — Candace Hutson</p>
+      </div>
+      <div class="item">
+        <img src="img/Ducky-el-dinosaurio-verde-sauropulus-pie-peque%C3%B1o-1_1.png" alt="Ducky">
+        <p>Ducky — Judith Barsi</p>
+      </div>
+      <div class="item">
+        <img src="img/spike-el-dinosaurio-verde-stegosaurus-pie-peque%C3%B1o-4.webp" alt="Spike">
+        <p>Spike — Frank Welker</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="mercancia" class="section recuadro">
+    <h2>Mercancía</h2>
+    <p>
+      Tras su éxito, <em>La Tierra antes del Tiempo</em> inspiró juguetes, libros, videojuegos y una serie de 14 secuelas
+      que expandieron su universo, convirtiéndose en una de las sagas animadas más queridas de todos los tiempos.
+    </p>
+  </section>
+
+  <section id="animacion" class="section recuadro">
+    <h2>Animación</h2>
+    <p>
+      La animación se realizó mediante técnicas tradicionales con un alto nivel de detalle. Don Bluth y su equipo
+      crearon entornos visualmente ricos, llenos de color y movimiento, utilizando más de 120,000 dibujos hechos a mano.
+    </p>
+  </section>
+
+  <section id="galeria" class="section recuadro">
+    <h2>Los amigos de Pie Pequeño</h2>
+    <div class="galeria">
+      <div class="item">
+        <img src="img/OIP.webp" alt="Escena 1">
+        <p>Los amigos cruzando el Gran Valle</p>
+      </div>
+      <div class="item">
+        <img src="img/spike-el-dinosaurio-verde-stegosaurus-pie-peque%C3%B1o-4.webp" alt="Escena 2">
+        <p>Spike disfrutando de su comida</p>
+      </div>
+      <div class="item">
+        <img src="img/Ducky-el-dinosaurio-verde-sauropulus-pie-peque%C3%B1o-1_1.png" alt="Escena 3">
+        <p>Ducky siempre optimista</p>
+      </div>
+      <div class="item">
+        <img src="img/Cera-la-dinosauria-triceratops-pie-peque%C3%B1o-PNG-5.png" alt="Escena 4">
+        <p>Cera mostrando su valentía</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer>
+    <p>&copy; 2025 Pie Pequeño | Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
